@@ -38,6 +38,37 @@ console.log(person)
 ### Basic Array Methods Experiments :-
 <code>filter</code><code>map</code><code>reduce</code><code>sort</code>
 
+### Javascript Range method Generator
+
+```
+function* rangeGenerator(start, end = null, step = 1) {
+    if (end == null) {
+        end = start
+        start = 0
+    }
+
+    if (Math.sign(end - start) !== Math.sign(step)) {
+        step *= -1
+    }
+
+    while (Math.sign(step) === 1 ? start < end : start > end) {
+        yield start
+        start += step
+    }
+}
+
+const range = (start, end = null, step = 1) => [...rangeGenerator(start, end, step)]
+
+
+// Now we can user range method on our forloop
+for (let i of range(10)){
+console.log(i)
+}
+```
+
+
+
+
 let's take a look <code>map()</code>
 ```
 const user = [
