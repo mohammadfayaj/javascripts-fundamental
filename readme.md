@@ -35,8 +35,7 @@ console.log(person)
 ##### now here, if you run this code you will face an error called 
 ###### Uncaught TypeError: Assignment to constant variable.
 
-### Basic Array Methods Experiments :-
-<code>filter</code><code>map</code><code>reduce</code><code>sort</code>
+
 
 ### Javascript Range method Generator
 
@@ -68,6 +67,8 @@ console.log(i)
 
 
 
+### Basic Array Methods Experiments :-
+<code>filter</code><code>map</code><code>reduce</code><code>sort</code>
 
 let's take a look <code>map()</code>
 ```
